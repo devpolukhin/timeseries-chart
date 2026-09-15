@@ -1,0 +1,97 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffc9d9 0%, #ffd9e4 100%);
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.chart-wrapper {
+  display: flex;
+  gap: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.chart-sidebar {
+  background: white;
+  padding: 16px 12px;
+  border-right: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 60px;
+}
+
+.sidebar-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.sidebar-value {
+  font-size: 13px;
+  color: #999;
+  margin: 4px 0;
+}
+
+.chart-container {
+  flex: 1;
+  background: #e8e4ec;
+  padding: 20px;
+  border: 1px solid #d8d4dc;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+}
+
+@media (max-width: 768px) {
+  .chart-wrapper {
+    flex-direction: column;
+  }
+  
+  .chart-sidebar {
+    flex-direction: row;
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 12px;
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .sidebar-label {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  
+  .sidebar-value {
+    margin: 0 8px;
+  }
+  
+  .chart-container {
+    border-left: 1px solid #f0e0e0;
+    border-radius: 0 0 8px 8px;
+  }
+}
